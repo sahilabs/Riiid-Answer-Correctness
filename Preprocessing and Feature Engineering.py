@@ -322,3 +322,12 @@ for s in range(steps):
     del prior_question_Avg_prior_index_final
 
 ################
+#Day Passed : Number of Day Passed since the user started it's first Question
+#It gives the sense to compare that the how many question is Answered for the user in the particular no of days
+value=24*60*60*1000#millisecounds
+timestamp=train.timestamp.values/value
+Day_passed=timestamp.copy()
+Day_passed=Day_passed.astype(int)
+np.save('Day_passed.npy',Day_passed)
+del timestamp,Day_passed
+gc.collect()
