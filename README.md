@@ -1,1 +1,21 @@
 # Riiid-Answer-Correctness
+
+## Table of Contents
+* [Riiid-Answer-Correctness](#Riiid-Answer-Correctness)
+* [Motivation](#Motivation)
+* [Library](#Library)
+* [DATA](#DATA)
+  * [CT_Scan](#CT_Scan)
+  * [TABULAR_DATA](#TABULAR_DATA)
+   * [Attributes](#Attributes)
+* [AIM](#AIM)
+* [Requirement](#Requirement)
+ * [Lung_Segmentation](#Lung_Segmentation)
+ * [Feature_Extraction](#Feature_Extraction)
+* [Sampler](#Sampler)
+* [Feature_Engineering](#Feature_Engineering)
+* [Metric](#Metric)
+* [Confidence](#confidence)
+* [Model](#Model)
+* [Loss](#Loss)
+* [Model_Performance](#Model_Performance)
