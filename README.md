@@ -10,7 +10,6 @@
   * [Question](#Question)
 * [AIM](#AIM)
 * [Requirement](#Requirement)
-* [Sampler](#Sampler)
 * [Feature_Engineering](#Feature_Engineering)
 * [AUC_Metric](#AUC_Metric)
 * [Model](#Model)
@@ -25,16 +24,13 @@ Riiid company introduces competition to find user's knowledge and can use to fin
 ## Motivation
 In 2018, 260 million children weren't attending school. At the same time, more than half of these young students didn't meet minimum reading and math standards. Education was already in a tough place when COVID-19 forced most countries to temporarily close schools. This further delayed learning opportunities and intellectual development. The equity gaps in every country could grow wider. We need to re-think the current education system in terms of attendance, engagement, and individualized attention.
 
-## AIM
-Challenge is to create algorithms for "Knowledge Tracing," the modeling of student knowledge over time. The goal is to accurately predict how students will perform on future interactions. so that we can make question according to their quality and very useful in targeting weak part student and help them to imporve, Just like our favorite teacher used to care us.
+
 
 ## DATA
 Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/)<br/>
 Data Set contains:
 ### Train 
-train.csv is user_data and 
-* list
- * sub-list
+train.csv is user_data 
 #### Attributes
  * **User_id** : unique ID corresponds each user.<br/>
  * **timestamp**: (int64) the time in milliseconds between this user interaction and the first event completion from that user.<br/>
@@ -69,4 +65,19 @@ train.csv is user_data and
  * **part**: top level category code for the lecture.<br/>
 
  * **tag**: one tag codes for the lecture. The meaning of the tags will not be provided, but these codes are sufficient for clustering the lectures together.<br/>
- asdasd
+
+## AIM
+Challenge is to create algorithms for "Knowledge Tracing," the modeling of student knowledge over time. The goal is to accurately predict how students will perform on future interactions. so that we can make question according to their quality and very useful in targeting weak part student and help them to imporve, Just like our favorite teacher used to care us. 
+
+## Feature Engineering
+* **Average_Index** : it's Ratio of Prior_Elasped time and Average time to Answer Question Correctly.<br/>
+* **Moving_Average_Index** : Moving Average of Average Index which helps to understand how the user used to Answer the question that is how far the question is                                      answered from the average.<br/>
+* **No_of_Question_answered** : Total No of Question Answered by the user.<br/>
+* **No_of_Question_answered_Correctly** : it's ratio of total_no_of_question_answered_correctly/total Question Attempted.<br/>
+* **Percent_of_student_answered_Correctly** : As each question has it's own ID so taking ratio how many times the question answered correctly,total no of times                                                      questions attempted.<br/> 
+* **Timestamp_diff** : This Features contains two steps:<br/>
+                                                      1) difference of timestamp.<br/>
+                                                      2) divide by the no of question in that bundle to get average timestamp taken by the                                                                                      user to answerd the question.<br/>
+* **Day_Passed** : total no of day passed since user first interaction and it's obtained by dividing by 86400(24 hours).<br/>
+* **Moving_average_prior_question_had_explaination/Moving_Explaination** : same procedure as Moving_average_index is genrated.<br/>
+
