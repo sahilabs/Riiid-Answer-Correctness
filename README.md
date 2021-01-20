@@ -30,3 +30,9 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 
 ## DATA
 Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/)
+Data Set contains:
+
+### Train 
+train.csv is user_data and 
+#### Attributes
+**User_id** : unique ID corresponds each user
