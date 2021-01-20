@@ -48,3 +48,24 @@ train.csv is user_data and
 
 ## Question
 ### Attributes
+questions.csv: metadata for the questions posed to users.
+
+question_id: foreign key for the train/test content_id column, when the content type is question (0).
+
+bundle_id: code for which questions are served together.
+
+correct_answer: the answer to the question. Can be compared with the train user_answer column to check if the user was right.
+
+part: the relevant section of the TOEIC test.
+
+tags: one or more detailed tag codes for the question. The meaning of the tags will not be provided, but these codes are sufficient for clustering the questions together.
+
+lectures.csv: metadata for the lectures watched by users as they progress in their education.
+
+lecture_id: foreign key for the train/test content_id column, when the content type is lecture (1).
+
+part: top level category code for the lecture.
+
+tag: one tag codes for the lecture. The meaning of the tags will not be provided, but these codes are sufficient for clustering the lectures together.
+
+type_of: brief description of the core purpose of the lecture
