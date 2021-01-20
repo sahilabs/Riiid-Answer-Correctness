@@ -1,5 +1,5 @@
 # Riiid-Answer-Correctness
-My life Sucks
+
 ## Table of Contents
 * [Riiid-Answer-Correctness](#Riiid-Answer-Correctness)
 * [Motivation](#Motivation)
@@ -77,7 +77,10 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 * **Percent_of_student_answered_Correctly** : As each question has it's own ID so taking ratio how many times the question answered correctly,total no of times                                                      questions attempted.<br/> 
 * **Timestamp_diff** : This Features contains two steps:<br/>
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1) difference of timestamp.<br/>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2) divide by the no of question in that bundle to get average timestamp taken by the user to answerd the question.<br/>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2) divide by the no of question in that bundle to get average timestamp taken by the user to answerd per question.<br/>
 * **Day_Passed** : total no of day passed since user first interaction and it's obtained by dividing by 86400(24 hours).<br/>
 * **Moving_average_prior_question_had_explaination/Moving_Explaination** : same procedure as Moving_average_index is genrated.<br/>
 
+<p float="left">
+  <img src="https://github.com/sahilabs/Riiid-Answer-Correctness/blob/main/Image/Feature%20Importance.png" width="200" />
+</p>
