@@ -1,5 +1,5 @@
 # Riiid-Answer-Correctness
-
+sad
 ## Table of Contents
 * [Riiid-Answer-Correctness](#Riiid-Answer-Correctness)
 * [Motivation](#Motivation)
@@ -82,5 +82,5 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 * **Moving_average_prior_question_had_explaination/Moving_Explaination** : same procedure as Moving_average_index is genrated.<br/>
 
 <p float="left">
-  <img src="https://github.com/sahilabs/Riiid-Answer-Correctness/blob/main/Image/Feature%20Importance.png" width="200" />
+  <img src="https://github.com/sahilabs/Riiid-Answer-Correctness/blob/main/Image/Feature%20Importance.png" />
 </p>
