@@ -29,10 +29,17 @@ In 2018, 260 million children weren't attending school. At the same time, more t
 Challenge is to create algorithms for "Knowledge Tracing," the modeling of student knowledge over time. The goal is to accurately predict how students will perform on future interactions. so that we can make question according to their quality and very useful in targeting weak part student and help them to imporve, Just like our favorite teacher used to care us.
 
 ## DATA
-Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/)
+Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/)<br/>
 Data Set contains:
-
 ### Train 
 train.csv is user_data and 
 #### Attributes
-**User_id** : unique ID corresponds each user
+**User_id** : unique ID corresponds each user.<br/>
+**timestamp**: (int64) the time in milliseconds between this user interaction and the first event completion from that user.
+**content_id**: (int16) ID code for the user interaction
+**content_type_id**: (int8) 0 if the event was a question being posed to the user, 1 if the event was the user watching a lecture.
+**task_container_id**: (int16) Id code for the batch of questions or lectures. For example, a user might see three questions in a row before seeing the explanations for any of them. Those three would all share a task_container_id.
+**user_answer**: (int8) the user's answer to the question, if any. Read -1 as null, for lectures.
+**answered_correctly**: (int8) if the user responded correctly. Read -1 as null, for lectures.
+**prior_question_elapsed_time**: (float32) The average time in milliseconds it took a user to answer each question in the previous question bundle, ignoring any lectures in between. Is null for a user's first question bundle or lecture. Note that the time is the average time a user took to solve each question in the previous bundle.
+**prior_question_had_explanation**: (bool) Whether or not the user saw an explanation and the correct response(s) after answering the previous question bundle, ignoring any lectures in between. The value is shared across a single question bundle, and is null for a user's first question bundle or lecture. Typically the first several questions a user sees were part of an onboarding diagnostic test where they did not get any feedback
