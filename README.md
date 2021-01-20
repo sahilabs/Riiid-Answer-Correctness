@@ -76,8 +76,8 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 * **No_of_Question_answered_Correctly** : it's ratio of total_no_of_question_answered_correctly/total Question Attempted.<br/>
 * **Percent_of_student_answered_Correctly** : As each question has it's own ID so taking ratio how many times the question answered correctly,total no of times                                                      questions attempted.<br/> 
 * **Timestamp_diff** : This Features contains two steps:<br/>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1) difference of timestamp.<br/>
- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2) divide by the no of question in that bundle to get average timestamp taken by the                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; user to answerd the question.<br/>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1) difference of timestamp.<br/>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp2) divide by the no of question in that bundle to get average timestamp taken by the user to answerd the question.<br/>
 * **Day_Passed** : total no of day passed since user first interaction and it's obtained by dividing by 86400(24 hours).<br/>
 * **Moving_average_prior_question_had_explaination/Moving_Explaination** : same procedure as Moving_average_index is genrated.<br/>
 
