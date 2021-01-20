@@ -1,5 +1,5 @@
 # Riiid-Answer-Correctness
-sad
+ 
 ## Table of Contents
 * [Riiid-Answer-Correctness](#Riiid-Answer-Correctness)
 * [Motivation](#Motivation)
@@ -84,3 +84,12 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 <p float="left">
   <img src="https://github.com/sahilabs/Riiid-Answer-Correctness/blob/main/Image/Feature%20Importance.png" />
 </p>
+
+# AUC_Metric
+ AUC is Area Under Curve here Curve is ROC
+ **ROC(Receiver operating characteristic)**: ROC explaination in simple Steps.<br/>
+ 1)Basically it's Curve drawn from TruePositive(as Y_axis) and False Positive(as X-axis).<br/>
+ 2)first sort all of the prediction and map to the actual value and start drawing  like when 1 comes go one step Horizontal and 0 comes fo one step one step
+   Vertical<br/>
+ 3) Drawn curve is ROC.br/>
+ Benfits of using AUC is that it doesn't depend on Threshold and the more AUC then the class is easily separable
