@@ -34,8 +34,8 @@ Data Set contains:
 ### Train 
 train.csv is user_data and 
 #### Attributes
-**User_id** : unique ID corresponds each user.<br/>
-**timestamp**: (int64) the time in milliseconds between this user interaction and the first event completion from that user.<br/>
+ -**User_id** : unique ID corresponds each user.<br/>
+ -**timestamp**: (int64) the time in milliseconds between this user interaction and the first event completion from that user.<br/>
 **content_id**: (int16) ID code for the user interaction.<br/>
 **content_type_id**: (int8) 0 if the event was a question being posed to the user, 1 if the event was the user watching a lecture.<br/>
 **task_container_id**: (int16) Id code for the batch of questions or lectures. For example, a user might see three questions in a row before seeing the explanations for any of them. Those three would all share a task_container_id.<br/>
