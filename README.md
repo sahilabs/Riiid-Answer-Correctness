@@ -33,6 +33,8 @@ Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/)<br/>
 Data Set contains:
 ### Train 
 train.csv is user_data and 
+* list
+ * sub-list
 #### Attributes
  -**User_id** : unique ID corresponds each user.<br/>
  -**timestamp**: (int64) the time in milliseconds between this user interaction and the first event completion from that user.<br/>
