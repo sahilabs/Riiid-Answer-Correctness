@@ -29,4 +29,4 @@ In 2018, 260 million children weren't attending school. At the same time, more t
 Challenge is to create algorithms for "Knowledge Tracing," the modeling of student knowledge over time. The goal is to accurately predict how students will perform on future interactions. so that we can make question according to their quality and very useful in targeting weak part student and help them to imporve, Just like our favorite teacher used to care us.
 
 ## DATA
-Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/overview)
+Data is from kaggle(https://www.kaggle.com/c/riiid-test-answer-prediction/)
