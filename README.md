@@ -36,7 +36,7 @@ train.csv is user_data
  * **timestamp**: (int64) the time in milliseconds between this user interaction and the first event completion from that user.<br/>
  * **content_id**: (int16) ID code for the user interaction.<br/>
  * **content_type_id**: (int8) 0 if the event was a question being posed to the user, 1 if the event was the user watching a lecture.<br/>
- * **task_container_id**: (int16) Id code for the batch of questions or lectures. For example, a user might see three questions in a row before seeing the explanations for any of them. Those three would all share a task_container_id.<br/>
+ * **task_container_id**: (int16) Id code for the batch of questions or lectures. For example, a user might see three questions in a row before seeing the explanations for any of them. Those three would all share a task_container_id. <br/>
  * **user_answer**: (int8) the user's answer to the question, if any. Read -1 as null, for lectures.<br/>
  * **answered_correctly**: (int8) if the user responded correctly. Read -1 as null, for lectures.<br/>
  * **prior_question_elapsed_time**: (float32) The average time in milliseconds it took a user to answer each question in the previous question bundle, ignoring any lectures in between. Is null for a user's first question bundle or lecture. Note that the time is the average time a user took to solve each question in the previous bundle.<br/>
@@ -89,7 +89,9 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
  AUC is Area Under Curve here Curve is ROC
  **ROC(Receiver operating characteristic)**: ROC explaination in simple Steps.<br/>
  1)Basically it's Curve drawn from TruePositive(as Y_axis) and False Positive(as X-axis).<br/>
- 2)first sort all of the prediction and map to the actual value and start drawing  like when 1 comes go one step Horizontal and 0 comes fo one step one step
-   Vertical<br/>
- 3) Drawn curve is ROC.br/>
+ 2)first sort all of the prediction and map to the actual value and start drawing  like when 1 comes go one step Horizontal and 0 comes one step Vertical<br/>
+ 3) Drawn curve is ROC. <br/>
  Benfits of using AUC is that it doesn't depend on Threshold and the more AUC then the class is easily separable
+
+# Model
+# Loss
