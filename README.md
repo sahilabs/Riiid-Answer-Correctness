@@ -101,7 +101,7 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 
 # Model
 ***This Network is Tunned based on 50 lakh sample points
-```
+```python
 def model(Drop_1,Drop_2,Drop_3,lr=0.01,optimizer='Adam'):
     Input=layers.Input((8,))
     x=layers.BatchNormalization()(Input)
@@ -127,6 +127,8 @@ def model(Drop_1,Drop_2,Drop_3,lr=0.01,optimizer='Adam'):
     return model_neural
 ```
 # Loss
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+Data |train_loss |train_AUC|Val_loss |Val_AUC 
+--- | --- | --- | --- |--- 
+5x10^7 Sample Data Points-I|0.5375|0.762 |0.538|0.761
+Kmeans Data Reduction(K=5x10^7) Neural Network| 0.489| 0.832| 0.487|0.831
+Kmeans Data Reduction(K=5x10^7) LGB| 0.461|0.875803|0.472|0.83951
