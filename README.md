@@ -12,6 +12,7 @@
 * [Requirement](#Requirement)
 * [Feature_Engineering](#Feature_Engineering)
 * [AUC_Metric](#AUC_Metric)
+* [Incremental_training](#Incremental_training)
 * [Model](#Model)
 * [Loss](#Loss)
 * [Model_Performance](#Model_Performance)
@@ -93,5 +94,39 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
  3) Drawn curve is ROC. <br/>
  Benfits of using AUC is that it doesn't depend on Threshold and the more AUC then the class is easily separable
 
+# Incremental_Training
+**Incremental Training/learning** :Incremental learning is a method of machine learning in which input data is continuously used to extend the existing model's knowledge i.e. to further train the model.<br/>
+
+**Require of Incremental Learning** :- As the train size of the data in the order 10^8. so, the entire data can't fit for model to deal with this problem we have to introduce the Incremental learning of model that is divide the model in serval parts such that it can fit into given resource without loosing the accuracy of the model. <br/>
+
 # Model
+***This Network is Tunned based on 50 lakh sample points
+```
+def model(Drop_1,Drop_2,Drop_3,lr=0.01,optimizer='Adam'):
+    Input=layers.Input((8,))
+    x=layers.BatchNormalization()(Input)
+    x=tfa.layers.WeightNormalization(layers.Dense(128,activation='relu'))(x)
+    x=layers.BatchNormalization()(x)
+    x=layers.Dropout(0.2)(x)
+    x=tfa.layers.WeightNormalization(layers.Dense(64,activation='relu'))(x)
+    x=layers.BatchNormalization()(x)
+    x=layers.Dropout(0.1)(x)
+    x=tfa.layers.WeightNormalization(layers.Dense(32,activation='relu'))(x)
+    x=layers.BatchNormalization()(x)
+    x=layers.Dropout(0.1)(x)
+    x=tfa.layers.WeightNormalization(layers.Dense(16,activation='relu'))(x)
+    x=layers.BatchNormalization()(x)
+    #x=layers.Dropout(0.1)(x)
+    x=tfa.layers.WeightNormalization(layers.Dense(1,activation='sigmoid'))(x)
+    model_neural=Models.Model(Input,x)
+    
+    ###################
+    bce = tf.keras.losses.BinaryCrossentropy()
+    optimizer=tf.keras.optimizers.Adam(lr=lr) if optimizer=='Adam' else tf.keras.optimizers.SGD()
+    model_neural.compile(loss=bce,optimizer=optimizer,metrics=[tf.keras.metrics.AUC()])
+    return model_neural
+```
 # Loss
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
