@@ -1,7 +1,7 @@
 # Riiid-Answer-Correctness
  
 ## Table of Contents
-* [Riiid-Answer-Correctness](#Riiid-Answer-Correctness)
+* [About the Riiid AIEd Challenge](#About the Riiid AIEd Challenge)
 * [Motivation](#Motivation)
 * [Library](#Library)
 * [DATA](#DATA)
@@ -17,10 +17,12 @@
 * [Loss](#Loss)
 * [Model_Performance](#Model_Performance)
 
+## About the Riiid AIEd Challenge
+Riiid Labs, an AI solutions provider delivering creative disruption to the education market, empowers global education players to rethink traditional ways of learning leveraging AI. With a strong belief in equal opportunity in education, Riiid launched an AI tutor based on deep-learning algorithms in 2017 that attracted more than one million South Korean students. This year, the company released EdNet, the world’s largest open database for AI education containing more than 100 million student interactions.
 
-## Riiid-Answer-Correctness
-Riiid is company which aims to empower global education players to rethink the traditional ways of learning via extending Riiid's AI competency Riiid's AI tutor solution replaces textbooks and traditional lectures with a personalized AI tutor outpacing human tutors at a fraction of the cost.
-Riiid company introduces competition to find user's knowledge and can use to find which set of question is suitabale for user
+In this competition, your challenge is to create algorithms for "Knowledge Tracing," the modeling of student knowledge over time. The goal is to accurately predict how students will perform on future interactions. You will pair your machine learning skills using Riiid’s EdNet data.
+
+Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
 
 ## Motivation
 In 2018, 260 million children weren't attending school. At the same time, more than half of these young students didn't meet minimum reading and math standards. Education was already in a tough place when COVID-19 forced most countries to temporarily close schools. This further delayed learning opportunities and intellectual development. The equity gaps in every country could grow wider. We need to re-think the current education system in terms of attendance, engagement, and individualized attention.
@@ -87,7 +89,7 @@ Challenge is to create algorithms for "Knowledge Tracing," the modeling of stude
 </p>
 
 # AUC_Metric
- AUC is Area Under Curve here Curve is ROC
+ AUC is Area Under ROC Curve.
  **ROC(Receiver operating characteristic)**: ROC explaination in simple Steps.<br/>
  1)Basically it's Curve drawn from TruePositive(as Y_axis) and False Positive(as X-axis).<br/>
  2)first sort all of the prediction and map to the actual value and start drawing  like when 1 comes go one step Horizontal and 0 comes one step Vertical<br/>
@@ -132,6 +134,3 @@ Data |train_loss |train_AUC|Val_loss |Val_AUC |Test_AUC(2.5x10^6)
 5x10^7 Sample Data Points|0.5375|0.762 |0.538|0.761|0.726
 Kmeans Data Reduction(K=5x10^7) Neural Network| 0.489| 0.832| 0.487|0.831|0.711
 Kmeans Data Reduction(K=5x10^7) LGB| 0.461|0.875803|0.472|0.83951|---
-
-
-asdsa
