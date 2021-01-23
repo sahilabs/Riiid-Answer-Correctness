@@ -128,7 +128,10 @@ def model(Drop_1,Drop_2,Drop_3,lr=0.01,optimizer='Adam'):
 ```
 # Loss
 Data |train_loss |train_AUC|Val_loss |Val_AUC |Test_AUC(2.5x10^6)
---- | --- | --- | --- |--- 
-5x10^7 Sample Data Points-I|0.5375|0.762 |0.538|0.761|0.726
+--- | --- | --- | --- |--- |---
+5x10^7 Sample Data Points|0.5375|0.762 |0.538|0.761|0.726
 Kmeans Data Reduction(K=5x10^7) Neural Network| 0.489| 0.832| 0.487|0.831|0.711
 Kmeans Data Reduction(K=5x10^7) LGB| 0.461|0.875803|0.472|0.83951|---
+
+
+asdsa
