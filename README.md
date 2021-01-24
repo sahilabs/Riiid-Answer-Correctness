@@ -1,7 +1,7 @@
 # Riiid-Answer-Correctness
  
 ## Table of Contents
-* [About the Riiid AIEd Challenge](#About the Riiid AIEd Challenge)
+* [About the Riiid AIEd Challenge](#About-the-Riiid-AIEd-Challenge)
 * [Motivation](#Motivation)
 * [Library](#Library)
 * [DATA](#DATA)
